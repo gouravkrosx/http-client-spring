@@ -19,5 +19,5 @@ curl -X PUT "http://localhost:8080/okhttp/update/4" \
            "age": "35"
          }'
 
-clear
+curl -X DELETE "http://localhost:8080/okhttp/delete/5"
 
