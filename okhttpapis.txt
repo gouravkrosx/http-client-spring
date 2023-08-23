@@ -1,0 +1,23 @@
+curl -X GET "http://localhost:8080/okhttp/employees"
+
+curl -X GET "http://localhost:8080/okhttp/employees/2"
+
+curl -X POST "http://localhost:8080/okhttp/create" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "name": "John Doe",
+           "salary": "50000",
+           "age": "30"
+         }'
+
+
+curl -X PUT "http://localhost:8080/okhttp/update/4" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "name": "Updated Name",
+           "salary": "60000",
+           "age": "35"
+         }'
+
+clear
+
